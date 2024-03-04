@@ -1,0 +1,137 @@
+.popular{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    gap: 30px;
+}
+
+.popular .title h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.popular .card-group{
+   
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  flex-wrap: wrap;
+    
+}
+
+.popular .card-group .card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 30px;
+    border-radius: 15px;
+    background: white;
+    gap: 15px;
+ 
+   
+}
+
+
+
+.popular .card-group .card .card-header img{
+    width: 13vw;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: transform 0.3s ease;
+ 
+   
+}
+
+.popular .card-group .card .card-body{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+    
+    
+}
+
+.popular .card-group .card .card-body .product-title h2{
+    font-size: 17px;
+    font-weight: 700;
+
+}
+
+.popular .card-group .card .card-body .description{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.popular .card-group .card .card-body .description .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11px;
+    color: #6c727f;
+   
+    
+}
+
+.popular .card-group .card .card-body .description .menu .feather-check-square{
+    stroke: #f01543;
+
+}
+
+.popular .card-group .card .card-body .button-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}  
+
+.popular .card-group .card .card-body .button-group button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    color: #6c727f;
+    font-size: 18px;
+    
+    
+}
+
+.popular .card-group .card .card-body .button-group .amount{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.popular .card-group .card:hover .button-group button{
+    background: #f01543;
+    color: white;
+    transition: background 0.9s ease;
+
+}
+
+.popular .card-group .card:hover .card-header img{
+    transform: scale(1.03);
+}
+
+
+
+.popular .card-group .card:hover  button .feather-shopping-cart{
+    stroke: white !important;
+    transition: stroke 0.9s ease;
+} 
+
+.popular .card-group .card .card-body .button-group button .feather-shopping-cart{
+    stroke: #6c727f;
+}

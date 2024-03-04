@@ -1,0 +1,136 @@
+.faq{
+    
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    background-image: url('../../images/faq-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.faq .left-part{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+   
+    
+}
+
+.faq .left-part .title h2{
+    font-size: 50px;
+}
+
+.faq .right-part{
+    width: 50%;
+    display: flex;
+  
+}
+
+.faq .faq-container .faq-item{
+   
+    margin-bottom: 20px;
+}
+
+.faq .faq-container .question{
+    background: white;
+    padding: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.faq .faq-container .question .icon{
+    cursor: pointer;
+}
+
+.faq .faq-container .answer{
+    background: white;
+    padding: 15px;
+    border-top: 1px solid #f01543;
+
+}
+
+.faq .right-part .image-gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq .right-part .image-gallery .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.faq .right-part .image-gallery .row img{
+    border-radius: 10px;
+}
+
+.faq .right-part .image-gallery .row .second{
+    position: relative;
+}
+
+.faq .right-part .image-gallery .row .second .image-overlay{
+    
+    position: absolute;
+    background-color: rgba(0, 9, 41, 0.84);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}   
+
+.faq .right-part .image-gallery .row .third{
+    position: relative;
+}
+
+.faq .right-part .image-gallery .row .third .image-overlay3{
+    
+    position: absolute;
+    background-color: rgba(240, 21, 67, 0.84);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}  
+
+
+
+.faq .right-part .image-gallery .row .second .image-overlay .big{
+    font-size: 55px;
+    display: block;
+}
+
+.faq .right-part .image-gallery .row .third .image-overlay3 .big{
+    font-size: 55px;
+    display: block;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './traditional.css'
-import CardImg1 from '../../images/baked-chicken-wings-and-legs-2024-01-25-10-02-43-3199.jpg'
+import CardImg1 from '../../images/baked-chicken-wings-and-legs-2024-01-25-10-02-43-3199.jpg';
+import Popular from '../../images/populer.png'
 
 function Traditional() {
     return (
@@ -29,6 +30,9 @@ function Traditional() {
                 <div className='card'>
                     <div className='card-header'>
                         <img src={CardImg1} />
+                        <span className='pouplar'>
+                            <img src={Popular} />
+                        </span>
 
                     </div>
                     <div className='card-body'>
@@ -149,7 +153,7 @@ function Traditional() {
                     </div>
 
                 </div>
-                
+
 
               
 

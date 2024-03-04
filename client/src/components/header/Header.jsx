@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 import search from '../../images/search.svg'
 import heart from '../../images/heart.svg'
 import cart from '../../images/shopping-cart.svg'
 import './header.css'
 
-function Header() {
+function Header() { 
+
+  const [isSticky, setIsSticky] = useState(false); 
+
+  useEffect(() => {
+    const handleScroll = () => {
+    
+      setIsSticky(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='header'>
+    <div className={`header ${isSticky ? 'sticky' : ''}`} >
        <div className='left-side'>
         <div className='brand'>FoodOrder</div>
         <div className='menu'>

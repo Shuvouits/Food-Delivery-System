@@ -69,11 +69,30 @@
 }
 
 
+
 .traditional .card .card-header img{
     width: 19vw;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
+ .traditional .card .card-header{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .traditional .card .card-header .pouplar{
+   position: absolute;
+   top: 90%;
+   left: -2%;
+ }
+
+ .traditional .card .card-header .pouplar img{
+    width: 100px;
+ }
+
 
 .traditional .card-group .card .card-body{
     display: flex;
@@ -135,12 +154,12 @@
     gap: 10px;
     font-size: 18px;
     font-weight: 500;
-    color: gray;
+    color: #6c727f;
     
 }
 
 .traditional .card-group .card .card-body button .feather-shopping-cart{
-    stroke: gray;
+    stroke: #6c727f;
 
 }
 

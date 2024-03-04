@@ -1,0 +1,78 @@
+.process {
+    background-image: url('../../images/Process-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 920px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.card{
+   /* background: #0d1634;  */
+}
+
+.process .right-side{
+    max-width: 35vw;
+    flex-wrap: nowrap;
+}
+
+.process .right-side .title h2{
+    font-size: 40px;
+    color: white;
+
+}
+
+.process .right-side .card-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.process .right-side .card-group .card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #0d1634;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.process .right-side .feather-map-pin{
+    stroke: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 19px;
+    border-radius: 10px;
+}
+
+.process .right-side .card .description span h2{
+    color: white;
+    font-size: 25px;
+}
+
+.process .right-side .card .description{
+    color: #808595;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.process .right-side .card .number{
+    color: #808595;
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    font-weight: bold;
+}
