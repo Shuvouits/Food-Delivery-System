@@ -1,0 +1,60 @@
+.category{
+    background: url('../../images/categories-bg.png');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    margin: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  
+}
+
+.category .title h2{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+  
+
+}
+
+
+
+.slider-card{
+    
+ 
+    
+}
+
+.category .slider-card .row {
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+.category .slider-card .row .data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #f9fafb;
+    border-radius: 20px;
+    height: 120px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    
+} 
+
+.category .slider-card .row img{
+    width: 100px;
+    height: 100px;
+}
+
+.category .slider-card .row .data:hover{
+    background: #f01543;
+    transition: background 0.9s ease;
+
+}

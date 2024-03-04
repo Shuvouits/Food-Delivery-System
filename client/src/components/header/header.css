@@ -1,0 +1,194 @@
+.header{
+   padding-left: 150px;
+   padding-right: 150px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header .left-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+.header .left-side .brand{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.header .left-side .menu{
+   display: flex;
+   gap: 20px;
+}
+
+.header .left-side .menu .custom-link{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header .left-side .menu .custom-link:hover{
+    border-bottom: 1px solid red;
+
+    transition: background 0.9s ease; 
+}
+
+.header .right-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header .right-side .search-bar{
+    border: 1px solid #626976;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #122833;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+.header .right-side .search-bar input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: gray;
+    font-size: 18px;
+    width: 150px;
+
+}
+
+
+.header .right-side .search-bar input::placeholder{
+    color: gray;
+    font-size: 18px !important;
+}
+
+.header .right-side .wish-list{
+    border: 1px solid #626976;
+    background: #122833;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.header .right-side .wish-list:hover{
+    background: red;
+    border: 1px solid white;
+    transition: background 0.3s ease; 
+
+}
+
+.header .right-side .wish-list:hover .number{
+    background: white;
+    color: red;
+    transition: background 0.3s ease; 
+
+}
+
+
+
+.header .right-side .wish-list .number{
+    background: red;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+   
+
+}  
+
+.header .right-side .cart{
+    border: 1px solid #626976;
+    background: #122833;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+
+.header .right-side .cart .number{
+    background: red;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.header .right-side .cart:hover{
+    background: red;
+    border: 1px solid white;
+    transition: background 0.3s ease; 
+
+}
+
+.header .right-side .cart:hover .number{
+    background: white;
+    color: red;
+    transition: background 0.3s ease; 
+
+}
+
+.header .right-side .signin button{
+    border: 1px solid white;
+    background: transparent;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header .right-side .signin button:hover{
+    background: red;
+    transition: background 0.9s ease; 
+}
+
+
+
+
+
