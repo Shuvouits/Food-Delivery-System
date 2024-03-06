@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -10,6 +10,8 @@ import Slider5 from "../../images/sandwiches-2024-01-23-12-07-02-3056.png";
 import Slider6 from "../../images/tacos-2024-01-31-11-33-57-7846.png";
 
 import './category.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 function Category() {
@@ -22,11 +24,17 @@ function Category() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-  };
+  };  
+
+  useEffect(()=>{
+
+    AOS.init({duration: 2000})
+
+},[])
 
 
   return (
-    <div className='category'>
+    <div className='category' data-aos='fade-up'>
 
       <span className='title'>
         <h2>Our Category</h2>

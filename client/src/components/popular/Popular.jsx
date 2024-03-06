@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './popular.css'
 import Image1 from '../../images/bbq-pulled-pork-sandwich-2024-01-25-11-11-44-3353.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Popular() {
+
+    useEffect(()=>{
+
+        AOS.init({duration: 3000})
+
+    },[])
+
+
     return (
         <div className='popular'>
             <div className='title'>
                 <h2>Most Popular Items</h2>
             </div>
-            <div className='card-group'>
+            <div className='card-group' data-aos='fade-up'>
 
 
                 <div className='card'>

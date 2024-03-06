@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './traditional.css'
 import CardImg1 from '../../images/baked-chicken-wings-and-legs-2024-01-25-10-02-43-3199.jpg';
 import Popular from '../../images/populer.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Traditional() {
+
+    useEffect(()=>{
+
+        AOS.init({duration: 2000})
+
+    },[])
+
+
     return (
-        <div className='traditional'>
+        <div className='traditional' >
             <div className='title'>
                 <h2>
                     Some Traditional Food Based on Location
@@ -25,7 +35,7 @@ function Traditional() {
 
             </div>
 
-            <div className='card-group'>
+            <div className='card-group' data-aos='fade-up'>
 
                 <div className='card'>
                     <div className='card-header'>

@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './faq.css'
 import ImageFirst from '../../images/image1-2023-10-22-07-47-33-8080.png'
 import ImageSecond from '../../images/image3-2024-01-22-05-48-54-6673.png'
 import ImageThird from '../../images/image2-2023-10-22-07-47-33-1651.png'
 import ImageFour from '../../images/image4-2024-01-22-05-51-26-7978.png'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 const faqData = [
@@ -36,9 +39,14 @@ const faqData = [
 const FAQItem = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);
 
+   
+
     const toggleAccordion = () => {
         setIsOpen(!isOpen);
     };
+
+    
+
 
     return (
         <div className={`faq-item ${isOpen ? "open" : ""}`} onClick={toggleAccordion}>
@@ -56,11 +64,16 @@ const FAQItem = ({ question, answer }) => {
 
 function FAQ() {
 
+    useEffect(()=>{
 
+        AOS.init({duration: 1000})
+
+    },[])
+    
 
     return (
-        <div className='faq'>
-            <div className='left-part'>
+        <div className='faq' >
+            <div className='left-part' data-aos='fade-left'>
                 <div className='title'>
                     <h2>Foodie FAQ: Your Culinary Queries Answered</h2>
 
@@ -72,7 +85,7 @@ function FAQ() {
                     ))}
                 </div>
             </div>
-            <div className='right-part'>
+            <div className='right-part' data-aos='fade-up'>
                 <div className='image-gallery'>
 
                     <div className='row'>

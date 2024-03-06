@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CustomerImage from '../../images/customer-icon.png'
 import './customer.css'
 import Avatar from '../../images/david-ethic-2023-10-22-10-34-52-2129.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Customer() {
+
+    useEffect(()=>{
+
+        AOS.init({duration: 1000})
+
+    },[])
+
+
     return (
-        <div className='customer'>
+        <div className='customer' >
             <div className='title'>
                 <h2>What’s Our Customer Say</h2>
             </div>
-            <div className='comment-group'>
+            <div className='comment-group' data-aos='fade-up'>
 
                 <div className='row'>
                     <div className='text'>

@@ -4,6 +4,8 @@ import search from '../../images/search.svg'
 import heart from '../../images/heart.svg'
 import cart from '../../images/shopping-cart.svg'
 import './header.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function Header() { 
 
