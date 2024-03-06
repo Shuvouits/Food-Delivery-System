@@ -10,6 +10,7 @@ import Customer from '../components/customer/Customer'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Latest from '../components/latestNews/Latest'
+import Resturent from '../components/resturent/Resturent'
 
 
 function Home() {
@@ -36,6 +37,7 @@ function Home() {
       <FAQ />
       <Customer />
       <Latest />
+      <Resturent />
 
     </>
   )
