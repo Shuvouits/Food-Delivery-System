@@ -1,0 +1,93 @@
+.resturent{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background: url('../../images/rest-bg.png');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.resturent .left-part{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 30px;
+
+    
+
+} 
+
+
+.resturent .right-part{
+    width: 50%;
+
+}
+
+.resturent .left-part .title h2{
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+
+}
+.resturent .left-part .description{
+    color: white;
+    font-size: 22px;
+
+}
+
+.resturent .left-part .logo{
+    display: flex;
+    gap: 20px;
+}
+
+.resturent .left-part .logo .first-logo{
+    background: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 55px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.resturent .left-part .logo .first-logo img{
+    width: 30px;
+}
+
+.resturent .left-part .logo .first-logo p{
+    font-weight: bold;
+}   
+
+.resturent .left-part .logo .second-logo{
+    background: black;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 55px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.resturent .left-part .logo .second-logo img{
+    width: 30px;
+}
+
+.resturent .left-part .logo .second-logo p{
+    font-weight: bold;
+    color: white;
+}
+
