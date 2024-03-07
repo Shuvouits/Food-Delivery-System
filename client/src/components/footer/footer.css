@@ -1,0 +1,137 @@
+.footer{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url('../../images/Footers-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -6px;
+}
+.footer .row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+   
+}
+
+.footer .row .col{
+    max-width: 25%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer .row .col .title{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+} 
+
+.footer .row .col .social{
+    display: flex;
+    gap: 10px;
+ 
+   
+   
+    
+}
+
+.footer .row .col .social .icon{
+    background: #19213e;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.9s ease; 
+}
+
+.footer .row .col .social .icon:hover{
+  background: #f01543;
+}
+
+.footer .row .col .qlink-group{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.footer .row .col .q-link{
+    transition: color 0.9s ease; 
+}
+
+.footer .row .col .q-link:hover{
+    color: #f01543;
+    
+}
+
+.footer .col .title-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .col .title-group .terms{
+    transition: color 0.9s ease; 
+} 
+
+.footer .col .title-group .terms:hover {
+    color: #f01543;
+}
+
+.footer .row .col .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .row .col .row .form{
+    display: flex;
+    gap: 10px;
+   
+}
+
+.footer .row .col .row .form-group input{
+  border: none;
+  background: #323a54;
+  height: 50px;
+  width: 13vw;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 15px;
+  color: gray;
+  font-size: 17px;
+}
+
+.footer .row .col .row .form button{
+    background: #f01543;
+    border: none;
+    color: white;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.9s ease; 
+}
+
+.footer .row .col .row .form button:hover{
+    background: white;
+    color: #f01543;
+}
+
+.footer .row .payment-image-group{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+}
