@@ -1,31 +1,30 @@
 .header{
-   padding-left: 150px;
-   padding-right: 150px;
-   padding-top: 30px;
-   padding-bottom: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+   padding-top: 20px;
+   padding-bottom: 20px;
    display: flex;
    align-items: center;
    justify-content: space-between;
    transition: background-color 0.9s ease;
+   
+   position: fixed;
+   width: 84vw;
+   overflow-x: hidden;
+  
+   top: 0;
+  
 }
 
-.header.sticky {
-    position: fixed;
-    width: 85vw;
-    top: 0;
-    background-color: #000929; /* Change the background color for sticky navbar */
-    z-index: 1000;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important; /* Optional: Add a box shadow */
-    height: 40px;
-    display: flex;
-   align-items: center;
-   justify-content: flex-start !important;
-   gap: 265px;
-    
-   
   
-    
+  .header.scrolled {
+    background-color: #000929;
+    z-index: 1000;
   }
+
+
+
+ 
 
 .header .left-side{
     display: flex;
@@ -205,6 +204,49 @@
 .header .right-side .signin button:hover{
     background: red;
     transition: background 0.9s ease; 
+}
+
+.header .responsive-menu{
+    
+    color: white;
+    background: #f01543;
+   
+   width: 50px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   cursor: pointer;
+   display: none;
+   
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .header{
+        padding-left: 10px;
+        padding-right: 10px;
+       width: 95vw;
+    }
+
+    .header .left-side .brand{
+        font-size: 30px;
+    }
+
+    .header .left-side .menu{
+        display: none;
+    }
+
+    .header .right-side{
+        display: none;
+
+    }
+
+    .header .responsive-menu{
+        display: flex;
+    }
+  
 }
 
 

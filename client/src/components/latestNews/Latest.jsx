@@ -20,6 +20,16 @@ function Latest() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+            // Add more responsive breakpoints as needed
+          ]
+          
     };
 
 

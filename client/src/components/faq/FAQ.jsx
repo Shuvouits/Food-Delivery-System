@@ -85,6 +85,8 @@ function FAQ() {
                     ))}
                 </div>
             </div>
+
+            
             <div className='right-part' data-aos='fade-up'>
                 <div className='image-gallery'>
 

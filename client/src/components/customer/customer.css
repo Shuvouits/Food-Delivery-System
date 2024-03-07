@@ -1,4 +1,4 @@
-.customer{
+.customer {
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 100px;
@@ -11,44 +11,44 @@
     gap: 40px;
 }
 
-.customer .title h2{
+.customer .title h2 {
     color: white;
     font-size: 45px;
     font-weight: bold;
 }
 
-.customer .comment-group{
-   display: flex;
- 
-   gap: 30px;
-   flex-wrap: wrap;
-   
+.customer .comment-group {
+    display: flex;
+
+    gap: 30px;
+    flex-wrap: wrap;
+
 }
 
-.customer .comment-group .row{
+.customer .comment-group .row {
     max-width: 25vw;
     min-width: 25vw;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+
 
 }
 
-.customer .comment-group .row .text{
-  
+.customer .comment-group .row .text {
+
     position: relative;
-    
+
     border: 1.5px solid rgba(255, 255, 255, 0.08);
     padding-left: 15px;
     height: 180px;
     padding-top: 15px;
-    
+
 
 }
 
-.customer .comment-group .row .text .customer-review{
-    
+.customer .comment-group .row .text .customer-review {
+
     color: white;
     position: absolute;
     top: 20%;
@@ -56,18 +56,18 @@
     color: #808595;
     font-weight: 700;
     font-size: 18px;
-   
-    
+
+
 }
 
-.customer .comment-group .row .details{
+.customer .comment-group .row .details {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 30px;
 }
 
-.customer .comment-group .row .details .second{
+.customer .comment-group .row .details .second {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -75,14 +75,14 @@
 }
 
 
-.customer .comment-group .row .details .second .rating-group .feather-star{
+.customer .comment-group .row .details .second .rating-group .feather-star {
     fill: goldenrod;
     stroke: goldenrod;
-   
+
 
 }
 
-.customer .comment-group .row .details .second .name{
+.customer .comment-group .row .details .second .name {
     font-weight: bold;
     font-size: 25px;
     color: white;
@@ -90,10 +90,38 @@
 
 }
 
-.customer .comment-group .row .details .second .profession{
-    
+.customer .comment-group .row .details .second .profession {
+
     font-size: 17px;
     color: white;
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .customer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .customer .title h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .customer .comment-group .row {
+        max-width: 100vw;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .customer .comment-group .row .details {
+        margin-left: 30px;
+    }
 
 
 }

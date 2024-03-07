@@ -176,3 +176,48 @@
     stroke: white;
     transition: stroke 0.9s ease;
 } 
+
+
+@media only screen and (max-width: 1000px) {
+
+    .traditional{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .traditional .title h2{
+        font-size: 25px;
+    }
+
+    .traditional .button-group{
+       
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+
+    .traditional .card-group{
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .traditional .card .card-header img{
+        width: 90vw;
+        border-radius: 10px;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .traditional .card-group .card .card-body{
+        
+    }  
+
+    .traditional .card-group .card .card-body .product-name{
+        max-width: 90vw;
+    }
+}

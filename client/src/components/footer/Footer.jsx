@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import visa from '../../images/-2023-10-26-06-08-41-2782.png'
 import americanExpress from '../../images/-2023-10-26-06-09-00-2179.png'
 import paypal from '../../images/-2023-10-26-06-09-29-6264.png'
@@ -6,11 +6,22 @@ import mastarCard from '../../images/-2023-10-26-06-11-52-9757.png'
 import googlePay from '../../images/-2023-10-26-06-12-07-2080.png'
 import './footer.css'
 
-function Footer() {
-    return (
-        <div className='footer'>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
-            <div className='row'>
+function Footer() {
+
+    useEffect(()=>{
+
+        AOS.init({duration: 3000})
+
+    },[])
+
+
+    return (
+        <div className='footer' >
+
+            <div className='row' data-aos='fade-right'>
 
                 <div className='col'>
                     <div className='title'>FoodOrder</div>

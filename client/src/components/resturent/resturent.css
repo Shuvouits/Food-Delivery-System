@@ -92,3 +92,66 @@
     color: white;
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .resturent{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+     
+    }
+
+    .resturent .left-part{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 20px;
+        
+       
+    } 
+
+    .resturent .right-part{
+        width: 90%;
+
+    }  
+
+    .resturent .right-part img{
+        width: 100%;
+
+    }
+
+    .resturent .left-part .title h2{
+        font-size: 35px;
+    
+    }
+    .resturent .left-part .description{
+   
+        font-size: 20px;
+        flex-wrap: wrap;
+    
+    } 
+
+    .resturent .left-part .logo .first-logo{
+       
+        width: 40vw;
+      
+    }
+
+    .resturent .left-part .logo .second-logo{
+       
+        width: 40vw;
+      
+    }
+
+
+}
+

@@ -17,13 +17,22 @@ import 'aos/dist/aos.css'
 function Category() {
 
   const settings = {
-
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+      // Add more responsive breakpoints as needed
+    ]
   };  
 
   useEffect(()=>{
@@ -37,7 +46,7 @@ function Category() {
     <div className='category' data-aos='fade-up'>
 
       <span className='title'>
-        <h2>Our Category</h2>
+        <h2>Our Categories</h2>
       </span>
       <br></br>
       <br></br>

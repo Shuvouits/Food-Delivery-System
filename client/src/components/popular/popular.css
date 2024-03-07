@@ -134,4 +134,23 @@
 
 .popular .card-group .card .card-body .button-group button .feather-shopping-cart{
     stroke: #6c727f;
+}  
+
+@media only screen and (max-width: 1000px) {
+    .popular{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .popular .title h2{
+        font-size: 30px;
+    }
+
+    .popular .card-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .popular .card-group .card .card-header img{
+        width: 45vw;
+    }
 }

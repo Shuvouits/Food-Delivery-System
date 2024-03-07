@@ -39,16 +39,20 @@
 .faq .faq-container .faq-item{
    
     margin-bottom: 20px;
+    border: 1px solid gainsboro;
+    
+    
 }
 
 .faq .faq-container .question{
-    background: white;
+  
     padding: 15px;
-    
+    background: #f5f5f7;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+   
 }
 
 .faq .faq-container .question .icon{
@@ -56,7 +60,7 @@
 }
 
 .faq .faq-container .answer{
-    background: white;
+    background: #f5f5f7;
     padding: 15px;
     border-top: 1px solid #f01543;
 
@@ -133,4 +137,29 @@
 .faq .right-part .image-gallery .row .third .image-overlay3 .big{
     font-size: 55px;
     display: block;
+}  
+
+@media only screen and (max-width: 1000px) {
+    .faq{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq .left-part{
+        width: 100%;
+    }
+
+    .faq .right-part{
+        width: 100%;
+    }
+    .faq .left-part .title h2{
+        font-size: 30px;
+    }
+    .faq .right-part .image-gallery{
+        display: none;
+    }
 }

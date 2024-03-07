@@ -18,9 +18,17 @@ h1,h2,h3, h4,p{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
 
 .custom-link{
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .nav-banner{
+    /*min-height: 50vh;*/
+  }
+
 }

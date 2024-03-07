@@ -2,12 +2,13 @@ import {Routes, Route, Link} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Footer from './components/footer/Footer'
+import Header from './components/header/Header'
 function App() {
  
 
   return (
     <>
-   
+    
      <Routes>
       
       <Route path='/' element={<Home />} />

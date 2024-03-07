@@ -15,7 +15,7 @@ import Resturent from '../components/resturent/Resturent'
 
 function Home() {
 
- 
+
   return (
     <>
       <div className='nav-banner'>
@@ -24,14 +24,8 @@ function Home() {
 
       </div>
       
-         <Category   />
-
-
-      
-      
-      <Traditional  />
-      
-      
+      <Category />
+      <Traditional />
       <Process />
       <Popular />
       <FAQ />
