@@ -11,10 +11,13 @@
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+   border: 1px solid green;
+  
+  
 }
 
 .resturent .left-part{
-    width: 50%;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -23,6 +26,7 @@
     padding-left: 100px;
     padding-right: 30px;
    
+   
 
     
 
@@ -30,8 +34,13 @@
 
 
 .resturent .right-part{
-    width: 50%;
+    width: 45vw;
+    
 
+}
+
+.resturent .right-part img{
+    width: 40vw;
 }
 
 .resturent .left-part .title h2{
@@ -92,11 +101,34 @@
     color: white;
 }
 
+@media only screen and (max-width: 1479px) {
+    .resturent{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .resturent .left-part .logo .first-logo{
+       
+        width: 20vw;
+      
+    }
+
+    .resturent .left-part .logo .second-logo{
+       
+        width: 20vw;
+      
+    }
+
+
+}
+
 @media only screen and (max-width: 1000px) {
 
     .resturent{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 50px;
         margin-top: 40px;
         display: flex;
@@ -104,6 +136,7 @@
         align-items: center;
         justify-content: flex-start;
         gap: 20px;
+       
      
     }
 

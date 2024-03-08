@@ -1,6 +1,6 @@
 .traditional{
-    background: url('../../images/traditional-bg.png');
     
+  background: url('../../images/traditional-bg.png');
   background-repeat: no-repeat;
   padding-left: 150px;
   padding-right: 150px;
@@ -8,6 +8,8 @@
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
+ 
+  width: 81vw;
   gap: 30px;
 }
 
@@ -24,12 +26,14 @@
     justify-content: center;
     gap: 15px;
     background: white;
-    width: 75%;
+   
     margin: auto;
     padding: 7px;
-   
+    flex-wrap: wrap;
+  
     border: 1px solid rgba(240, 21, 67, 0.1);
     border-radius: 15px;
+    
 }
 
 .traditional .button-group span{
@@ -48,13 +52,13 @@
 }  
 
 .traditional .card-group{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    
+    gap: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    
   
 
 }
@@ -66,14 +70,20 @@
     gap: 10px;
     border-radius: 15px;
     
+    flex-wrap: wrap;
+    width: 25vw;
+    
+    
 }
 
 
 
 .traditional .card .card-header img{
-    width: 19vw;
+  
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 25vw;
+    
 }
 
  .traditional .card .card-header{
@@ -117,7 +127,8 @@
 .traditional .card-group .card .card-body .product-name{
     font-size: 20px;
     font-weight: bold;
-    max-width: 14vw;
+    max-width: 400px;
+   
     
 }
 
@@ -177,12 +188,32 @@
     transition: stroke 0.9s ease;
 } 
 
+@media only screen and (max-width: 1637px) {
+    .traditional{
+        width: 75vw;
+       
+    }
+}
+
+@media only screen and (max-width: 1224px) {
+    .traditional{
+        width: 70vw;
+        
+    }
+}
+
 
 @media only screen and (max-width: 1000px) {
 
     .traditional{
         padding-left: 10px;
         padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 95vw;
+        
+       
+  
     }
     .traditional .title h2{
         font-size: 25px;
@@ -196,22 +227,37 @@
         gap: 10px;
         flex-wrap: wrap;
         width: 90vw;
+       
+       
     }
 
     .traditional .card-group{
       
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     
     }
 
-    .traditional .card .card-header img{
-        width: 90vw;
-        border-radius: 10px;
-        text-align: center;
-        padding-left: 10px;
+   
+    
+    .traditional .card-group .card{
+        
+        width: 80vw;
+        
+        
     }
+
+    .traditional .card .card-header img{
+  
+       
+        width: 80vw;
+        
+    }
+    
+
+   
 
     .traditional .card-group .card .card-body{
         

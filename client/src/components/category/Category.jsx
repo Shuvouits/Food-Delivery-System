@@ -24,7 +24,25 @@ function Category() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    
+
     responsive: [
+
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+
+      {
+        breakpoint: 1263,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+
+
       {
         breakpoint: 1000,
         settings: {
@@ -43,7 +61,7 @@ function Category() {
 
 
   return (
-    <div className='category' data-aos='fade-up'>
+    <div className='category' >
 
       <span className='title'>
         <h2>Our Categories</h2>

@@ -16,7 +16,7 @@ function Resturent() {
 
 
     return (
-        <div className='resturent'>
+        <div className='resturent' data-aos='fade-up'>
             <div className='left-part'>
 
                 <span className='title'>
@@ -43,7 +43,7 @@ function Resturent() {
                 </span>
 
             </div>
-            <div className='right-part' data-aos='fade-left'>
+            <div className='right-part' >
                 <img src={websiteImg} />
 
             </div>

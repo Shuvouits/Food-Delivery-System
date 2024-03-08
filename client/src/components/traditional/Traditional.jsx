@@ -7,11 +7,11 @@ import 'aos/dist/aos.css'
 
 function Traditional() {
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        AOS.init({duration: 2000})
+        AOS.init({ duration: 2000 })
 
-    },[])
+    }, [])
 
 
     return (
@@ -35,7 +35,9 @@ function Traditional() {
 
             </div>
 
-            <div className='card-group' data-aos='fade-up'>
+
+
+            <div className='card-group' data-aos ='fade-up'>
 
                 <div className='card'>
                     <div className='card-header'>
@@ -69,7 +71,7 @@ function Traditional() {
 
                     </div>
 
-                </div> 
+                </div>
 
                 <div className='card'>
                     <div className='card-header'>
@@ -100,7 +102,7 @@ function Traditional() {
 
                     </div>
 
-                </div> 
+                </div>  
 
                 <div className='card'>
                     <div className='card-header'>
@@ -163,11 +165,12 @@ function Traditional() {
                     </div>
 
                 </div>
-
-
-              
 
                 
+
+
+
+
             </div>
 
 

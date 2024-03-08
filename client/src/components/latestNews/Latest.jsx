@@ -20,7 +20,16 @@ function Latest() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+       
         responsive: [
+
+            {
+                breakpoint: 1613,
+                settings: {
+                  slidesToShow: 2,
+                }
+              },
+
             {
               breakpoint: 1000,
               settings: {

@@ -73,13 +73,13 @@ function FAQ() {
 
     return (
         <div className='faq' >
-            <div className='left-part' data-aos='fade-left'>
+            <div className='left-part' >
                 <div className='title'>
                     <h2>Foodie FAQ: Your Culinary Queries Answered</h2>
 
                 </div>
 
-                <div className="faq-container">
+                <div className="faq-container" data-aos='fade-up'>
                     {faqData.map((item) => (
                         <FAQItem key={item.id} question={item.question} answer={item.answer} />
                     ))}
@@ -92,7 +92,7 @@ function FAQ() {
 
                     <div className='row'>
                         <div className='first'>
-                            <img src={ImageFirst} />
+                            <img src={ImageFirst} width={390}/>
                         </div>
                         <div className='second'>
                             <img src={ImageSecond} />
@@ -106,7 +106,7 @@ function FAQ() {
 
                     <div className='row'>
                        <div className='third'>
-                            <img src={ImageFour} />
+                            <img src={ImageFour} width={250} height={290}/>
                             <div className='image-overlay3'>
                                 <span><span className='big'>365+</span> Success Event</span>
                             </div>
@@ -114,7 +114,7 @@ function FAQ() {
                         </div>
 
                         <div className='four'>
-                            <img src={ImageThird} />
+                            <img src={ImageThird} width={390}/>
                         </div>
                       
 

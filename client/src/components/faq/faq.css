@@ -13,11 +13,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    
    
 }
 
 .faq .left-part{
-    width: 50%;
+    width: 45vw;
     display: flex;
     flex-direction: column;
 
@@ -31,8 +33,9 @@
 }
 
 .faq .right-part{
-    width: 50%;
+    width: 45vw;
     display: flex;
+    
   
 }
 
@@ -139,6 +142,25 @@
     display: block;
 }  
 
+@media only screen and (max-width: 1659px) {
+    .faq .left-part{
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 1509px) {
+    .faq{
+        display: flex;
+        flex-direction: column;
+    }
+    .faq .left-part{
+        width: 80vw;
+    }
+    .faq .right-part{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .faq{
         padding-left: 10px;
@@ -147,19 +169,21 @@
         padding-bottom: 50px;
         display: flex;
         flex-direction: column;
+        width: 95vw;
+       
     }
 
     .faq .left-part{
-        width: 100%;
+        width: 93vw;
     }
 
     .faq .right-part{
-        width: 100%;
+        display: none;
     }
+
+  
     .faq .left-part .title h2{
         font-size: 30px;
     }
-    .faq .right-part .image-gallery{
-        display: none;
-    }
+   
 }

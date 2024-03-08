@@ -21,7 +21,7 @@ function Footer() {
     return (
         <div className='footer' >
 
-            <div className='row' data-aos='fade-right'>
+            <div className='row' >
 
                 <div className='col'>
                     <div className='title'>FoodOrder</div>

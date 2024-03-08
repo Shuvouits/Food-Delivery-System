@@ -3,8 +3,7 @@
     padding-right: 150px;
     padding-top: 100px;
     padding-bottom: 100px;
-    
-    
+  
 }
 
 .latest .title h2{
@@ -15,7 +14,8 @@
 
 }
 
-.latest .slick-slide{
+.latest .slick-slider{
+   
     
   
     
@@ -42,21 +42,22 @@
     position: absolute;
     top: 60%;
     color: white;
-    margin-left: 20px;
+    margin-left: 16px;
     font-size: 23px;
     font-weight: bold;
     cursor: pointer;
 }
 
 .latest .carousel-container .slider-card{
-   display: flex !important;
-   flex-direction: column;
-   align-items: center !important;
-   justify-content: flex-start;
-   gap: 20px !important;
+  display: flex;
   
 }
 
+.latest .carousel-container .slider-card img{
+    width: 95%;
+    margin-left: 10px;
+   
+ }
 .latest .carousel-container .slider-card .group-data .title{
    
 
@@ -95,16 +96,21 @@
    
 }
 
+
+
 @media only screen and (max-width: 1000px) {
     .latest{
-        padding-left: 10px;
+        padding-left: 15px;
         padding-right: 10px;
         padding-top: 50px;
         padding-bottom: 50px;
+     
+        max-width: 93vw;
+        
         
     }
     .latest .carousel-container .slider-card .data img{
-        width: 85vw;
+        width: 90vw;
     }
 }
 

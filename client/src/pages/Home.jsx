@@ -11,6 +11,8 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Latest from '../components/latestNews/Latest'
 import Resturent from '../components/resturent/Resturent'
+import Navbar from '../components/navbar/Navbar'
+import Footer from '../components/footer/Footer'
 
 
 function Home() {
@@ -18,12 +20,13 @@ function Home() {
 
   return (
     <>
-      <div className='nav-banner'>
-        <Header />
-        <Hero />
 
+      <Header />
+      <div className='nav-banner'>
+
+
+        <Hero />
       </div>
-      
       <Category />
       <Traditional />
       <Process />
@@ -32,6 +35,20 @@ function Home() {
       <Customer />
       <Latest />
       <Resturent />
+     <Footer />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </>
   )

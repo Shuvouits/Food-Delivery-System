@@ -8,8 +8,8 @@
     padding-right: 150px;
     padding-top: 50px;
     padding-bottom: 50px;
+   
     
-  
 }
 
 .category .title h2{
@@ -64,8 +64,12 @@
     .category{
         padding-left: 10px;
         padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 92vw;
        
     }
+   
     .category .title h2{
         font-size: 25px;
     }

@@ -1,117 +1,121 @@
-.process {
-    background-image: url('../../images/Process-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 920px;
-    padding: 20px;
+.process{
+    background: url('../../images/Process-bg.png');
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 100px;
-}
-
-.card{
-   /* background: #0d1634;  */
-}
-
-.process .right-side{
-    max-width: 35vw;
-    flex-wrap: nowrap;
+    gap: 30px;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
    
+  
+
 }
-
-.process .right-side .title h2{
-    font-size: 40px;
-    color: white;
-
+.process .left-side{
+    
+    width: 45vw;
+}
+.process .left-side img{
+    width: 40vw;
+}
+.process .right-side{
+   
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .process .right-side .card-group{
     display: flex;
     flex-direction: column;
     gap: 20px;
+   
 }
 
 .process .right-side .card-group .card{
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.process .right-side .title h2{
+    color: white;
+    font-size: 40px;
+}
+
+
+.process .right-side .card-group .card{
     background: #0d1634;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 30vw;
+}
+
+.process .right-side .card-group .card .icon{
+    color: white;
+    background: #262e49;
+    padding: 10px;
     border-radius: 15px;
+
+}
+
+.process .right-side .card-group .card .card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     position: relative;
 }
 
-.process .right-side .feather-map-pin{
-    stroke: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 19px;
-    border-radius: 10px;
-}
-
-.process .right-side .card .description span h2{
+.process .right-side .card-group .card h3{
     color: white;
     font-size: 25px;
-}
 
-.process .right-side .card .description{
-    color: #808595;
+}
+.process .right-side .card-group .card p{
+    color: white;
     font-size: 17px;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
-
-.process .right-side .card .number{
-    color: #808595;
-    font-size: 90px;
+.process .right-side .card-group .card .sticker-number{
     position: absolute;
-    top: 50%;
-    left: 80%;
+    top: 60%;
+    left: 90%;
     transform: translate(-50%, -50%);
-    opacity: 0.2;
+    color: white;
+    font-size: 80px;
     font-weight: bold;
-} 
+    opacity: 0.1;
+}
 
 @media only screen and (max-width: 1000px) {
-   .process{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-   }
-   .process .left-side img{
-    padding: 10px;
-    width: 85vw;
+    .process{
+        
+    }
+}
 
-   }
-   .process .right-side{
-    
-    max-width: 100vw;
-   }
-   .process .right-side .title h2{
-    font-size: 30px;
-   } 
+@media only screen and (max-width: 1000px) {
+    .process{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .process .left-side{
+        width: 99vw;
+    }
+    .process .left-side img{
+        width: 90vw;
 
-   .process .right-side .card .description span h2{
-     font-size: 20px;
-   }
-   .process .right-side .card-group{
-    gap: 10px;
-   }
+    }
+    .process .right-side{
+        width: 99vw;
+    }
 
-   .process .right-side .card-group .card{
-   
-    padding-top: 10px;
-    padding-bottom: 10px;
-   }
+    .process .right-side .card-group .card{
+        width: 90vw;
+    }
 }

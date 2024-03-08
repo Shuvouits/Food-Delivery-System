@@ -26,10 +26,12 @@ function Header() {
     };
   }, []);
 
-  
+ 
+
+
 
   return (
-    <div  className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <div className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className='left-side'>
         <div className='brand'>FoodOrder</div>
         <div className='menu'>

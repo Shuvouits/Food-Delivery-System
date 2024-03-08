@@ -10,7 +10,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: -6px;
+   
 }
 .footer .row{
     display: flex;
@@ -134,4 +134,46 @@
     gap: 10px;
     cursor: pointer;
 
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .footer .row{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 15px;
+    }
+    .footer .row .col{
+        max-width: 100%;
+    }
+    .footer .row .col .row .form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       
+    }
+
+    .footer .row .col .row .form-group input{
+        width: 74vw;
+        
+    }
+
+    .footer .row .col .row .form button{
+        
+        
+       
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.9s ease; 
+        height: 40px;
+    }
 }

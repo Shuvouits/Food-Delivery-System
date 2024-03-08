@@ -1,255 +1,199 @@
 .header{
     padding-left: 150px;
     padding-right: 150px;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   transition: background-color 0.9s ease;
-   
-   position: fixed;
-   width: 84vw;
-   overflow-x: hidden;
-  
-   top: 0;
-  
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 }
 
-  
-  .header.scrolled {
+.header.scrolled {
     background-color: #000929;
     z-index: 1000;
+   
+   
   }
-
-
-
- 
 
 .header .left-side{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    
+    justify-content: flex-start;
+    gap: 25px;
 }
-
 .header .left-side .brand{
+    font-size: 40px;
     color: white;
     font-weight: bold;
-    font-size: 40px;
 }
 
 .header .left-side .menu{
-   display: flex;
-   gap: 20px;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    gap: 15px;
+    font-weight: 700;
 }
-
 .header .left-side .menu .custom-link{
     color: white;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.header .left-side .menu .custom-link:hover{
-    border-bottom: 1px solid red;
-
-    transition: background 0.9s ease; 
 }
 
 .header .right-side{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 
 .header .right-side .search-bar{
-    border: 1px solid #626976;
+    border: 1px solid gainsboro;
+    height: 50px;
+    border-radius: 10px;
+    background: #000929;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #122833;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 .header .right-side .search-bar input{
     border: none;
     outline: none;
     background: transparent;
-    color: gray;
-    font-size: 18px;
-    width: 150px;
-
-}
-
-
-.header .right-side .search-bar input::placeholder{
-    color: gray;
-    font-size: 18px !important;
+    color: white;
+    font-size: 16px;
 }
 
 .header .right-side .wish-list{
-    border: 1px solid #626976;
     background: #122833;
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     position: relative;
     cursor: pointer;
-
 }
-
-.header .right-side .wish-list:hover{
-    background: red;
-    border: 1px solid white;
-    transition: background 0.3s ease; 
-
-}
-
-.header .right-side .wish-list:hover .number{
-    background: white;
-    color: red;
-    transition: background 0.3s ease; 
-
-}
-
-
 
 .header .right-side .wish-list .number{
-    background: red;
-    color: white;
     position: absolute;
-    top: 0px;
-    left: 40px;
+    color: white;
+    background: red;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-   
-    
-   
+}
 
-}  
 
 .header .right-side .cart{
-    border: 1px solid #626976;
     background: #122833;
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     position: relative;
     cursor: pointer;
-
 }
 
-
-
 .header .right-side .cart .number{
-    background: red;
-    color: white;
     position: absolute;
-    top: 0px;
-    left: 40px;
+    color: white;
+    background: red;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-   
-
-}
-
-.header .right-side .cart:hover{
-    background: red;
-    border: 1px solid white;
-    transition: background 0.3s ease; 
-
-}
-
-.header .right-side .cart:hover .number{
-    background: white;
-    color: red;
-    transition: background 0.3s ease; 
-
 }
 
 .header .right-side .signin button{
-    border: 1px solid white;
+    border: none;
     background: transparent;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    border: 1px solid gainsboro;
+    outline: none;
+    width: 120px;
+    height: 50px;
     color: white;
-    font-size: 15px;
+    font-size: 19px;
     border-radius: 10px;
     cursor: pointer;
-}
 
-.header .right-side .signin button:hover{
-    background: red;
-    transition: background 0.9s ease; 
 }
-
 .header .responsive-menu{
-    
-    color: white;
-    background: #f01543;
-   
-   width: 50px;
-   height: 40px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 5px;
-   cursor: pointer;
-   display: none;
-   
+    display: none;
+}
+
+@media only screen and (max-width: 1461px) {
+    .header .right-side .search-bar{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1189px) {
+    .header .right-side .signin button{
+        display: none;
+        
+    }
+
+}
+
+@media only screen and (max-width: 1143px) {
+    .header .right-side{
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {
-
     .header{
         padding-left: 10px;
         padding-right: 10px;
-       width: 95vw;
+       
+        
+    }
+    .header.scrolled .brand{
+       
+        
+    }
+    .header.scrolled .responsive-menu{
+        
+       
     }
 
-    .header .left-side .brand{
-        font-size: 30px;
+   
+    .header .right-side{
+        display: none;
     }
-
     .header .left-side .menu{
         display: none;
     }
-
-    .header .right-side{
-        display: none;
-
-    }
-
     .header .responsive-menu{
         display: flex;
+        padding-right: 20px;
+        color: white;
     }
-  
 }
-
-
-
-
-
