@@ -136,6 +136,15 @@
 
 }
 
+@media only screen and (max-width: 4300px) {
+
+    .footer .row .payment-image-group{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+}
+
 @media only screen and (max-width: 1000px) {
     .footer{
         padding-left: 10px;

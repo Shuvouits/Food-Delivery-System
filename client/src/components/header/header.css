@@ -191,9 +191,30 @@
     .header .left-side .menu{
         display: none;
     }
+    .header .left-side .menu.mobile{
+        position: absolute;
+        top: 0;
+        background: #000929;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+        font-size: 23px;
+        padding-left: 30px;
+    }
     .header .responsive-menu{
         display: flex;
-        padding-right: 20px;
+        
         color: white;
+        cursor: pointer;
+        background: #f01543;
+        width: 60px;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
