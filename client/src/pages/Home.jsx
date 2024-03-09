@@ -35,7 +35,6 @@ function Home() {
       <Customer />
       <Latest />
       <Resturent />
-     <Footer />
 
 
 

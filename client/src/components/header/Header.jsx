@@ -29,19 +29,21 @@ function Header() {
   //responsive menu
   const [responsive, setResponsive] = useState(false)
 
-  const handleClick=()=>{
+  const handleClick = () => {
     setResponsive(!responsive);
 
   }
 
- 
+
 
 
 
   return (
     <div className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className='left-side'>
-        <div className='brand'>FoodOrder</div>
+        <div className='brand'>
+          <Link to={'/'} className='custom-link'> FoodOrder</Link>
+        </div>
         <div className={`menu ${responsive ? 'mobile' : ''}`} >
           <Link className='custom-link' to={'/'}> Home</Link>
           <Link className='custom-link' to={'/menu'}> Menu</Link>
@@ -78,9 +80,9 @@ function Header() {
 
           )
         }
-       
 
-       
+
+
 
       </div>
     </div>
