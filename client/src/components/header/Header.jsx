@@ -49,7 +49,7 @@ function Header() {
           <Link className='custom-link' to={'/menu'}> Menu</Link>
           <Link className='custom-link' to={'/about'}> About Us</Link>
           <Link className='custom-link' to={'/contact'}> Contact Us</Link>
-          <Link className='custom-link' to={'/blog'}> Blog</Link>
+          <Link className='custom-link' to={'/blog-list'}> Blog</Link>
         </div>
       </div>
       <div className='right-side'>

@@ -10,6 +10,7 @@ import Slider4 from "../../images/-2024-02-01-12-05-11-5463.png";
 import Slider5 from "../../images/-2024-02-01-12-05-11-5463.png";
 import Slider6 from "../../images/-2024-02-01-12-05-11-5463.png";
 
+
 function Latest() {
 
     const settings = {
