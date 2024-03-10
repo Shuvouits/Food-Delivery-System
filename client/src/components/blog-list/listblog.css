@@ -112,4 +112,18 @@
         
     }
 
+    .list-blog .container .row .card .info .title{
+    
+       
+        font-size: 20px;
+       
+    }
+    .list-blog .container .row .card .info .tag-list{
+        font-size: 15px;
+    }
+
+    .list-blog .container .row .card .info{
+        top: 40%;
+    }
+
 }

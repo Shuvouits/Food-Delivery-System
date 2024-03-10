@@ -1,0 +1,148 @@
+.contact{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100;
+    max-width: 100vw;
+    flex-wrap: wrap;
+}
+
+.contact .contact-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.contact .contact-wrapper .left-side{
+    width: 30vw;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ 
+}  
+
+
+.contact .contact-wrapper .left-side .title h2{
+   font-size: 40px;
+}
+.contact .contact-wrapper .left-side .icon-group{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+   
+}
+
+.contact .contact-wrapper .left-side .icon-group .second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+   
+}
+
+
+.contact .contact-wrapper .right-side{
+    width: 40vw;
+    flex-wrap: wrap;
+    border: 1px solid #ffd6ae;
+}
+
+.contact .contact-wrapper .right-side .form{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.contact .contact-wrapper .right-side .form .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contact .contact-wrapper .right-side .form .row .form-group{
+    width: 45%;
+}
+
+
+
+.contact .contact-wrapper .right-side .form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+
+.contact .contact-wrapper .right-side .form .form-group label{
+    margin-top: 10px;
+    
+}
+.contact .contact-wrapper .right-side .form .form-group .form-control{
+    border: 1px solid gainsboro;
+    height: 45px;
+    outline: none;
+    padding-left: 15px;
+    color: gray;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.contact .contact-wrapper .right-side .form .form-group textarea{
+    width: 98%;
+    padding-top: 15px;
+    height: 20vh !important;
+}
+
+.contact .contact-wrapper .right-side .form button{
+    margin-top: 20px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #f01543;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contact .contact-wrapper .right-side .form button:hover{
+    background: white;
+    color: #f01543;
+    border: 1px solid #f01543;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .contact{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contact .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .contact-wrapper .left-side{
+        width: 98%;
+        flex-wrap: wrap;
+    }
+
+    .contact .contact-wrapper .right-side{
+        width: 98%;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+

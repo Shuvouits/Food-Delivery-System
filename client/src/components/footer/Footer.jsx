@@ -75,7 +75,7 @@ function Footer() {
                         <div className='subscribe-form'>
                             <form className='form'>
                                 <div className='form-group'>
-                                    <input type='text' className='form-control' />
+                                    <input type='text' className='form-control' placeholder='Join Our Newsletter' />
                                 </div>
                                 <button>Subscribe</button>
                             </form>

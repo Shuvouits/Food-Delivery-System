@@ -136,7 +136,7 @@
 
 }
 
-@media only screen and (max-width: 4300px) {
+@media only screen and (max-width: 1300px) {
 
     .footer .row .payment-image-group{
       display: flex;
