@@ -11,25 +11,21 @@ import Latest from '../components/latestNews/Latest'
 import Resturent from '../components/resturent/Resturent.jsx'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
+import Banner from '../components/banner/Banner.jsx'
+import AboutComponent from '../components/about/AboutComponent.jsx'
 
 function About() {
   return (
     <div>
-      <div className='nav-banner'>
-
-        <Header />
-        <Hero />
-
-      </div>
-      
-      <Category />
-      <Traditional />
-      <Process />
-      <Popular />
-      <FAQ />
-      <Customer />
-      <Latest />
-      <Resturent />
+     <Header />
+    <Banner title={'About Us'} />
+    <AboutComponent />
+    <Process />
+    <Popular />
+    <Customer />
+    <FAQ />
+    <Resturent />
+    
 
 
 
