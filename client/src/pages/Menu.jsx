@@ -5,6 +5,7 @@ import FAQ from '../components/faq/FAQ'
 import Resturent from '../components/resturent/Resturent'
 import Banner from '../components/banner/Banner'
 import './page.css'
+import Footer from '../components/footer/Footer'
 
 function Menu() {
 
@@ -17,6 +18,7 @@ function Menu() {
             <Traditional />
             <FAQ />
             <Resturent />
+            <Footer />
 
         </>
 

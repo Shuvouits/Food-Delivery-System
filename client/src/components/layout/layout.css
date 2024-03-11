@@ -1,0 +1,53 @@
+.layout{
+    
+} 
+
+.layout .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.layout .container .left-part{
+    width: 15vw;
+    border-right: 1px solid #fccbd5;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.layout .container .right-part{
+    width: 85vw;
+   
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 1410px) {
+
+    .layout .container .left-part{
+        width: 20vw;
+    }
+
+    .layout .container .right-part{
+        width: 80vw;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .layout .container .left-part{
+        display: none;
+    }
+
+    .layout .container .right-part{
+        width: 100vw;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+       
+       
+    }
+
+}

@@ -4,6 +4,7 @@ import Banner from '../components/banner/Banner'
 import FAQ from '../components/faq/FAQ'
 import Resturent from '../components/resturent/Resturent'
 import ListBlog from '../components/blog-list/ListBlog'
+import Footer from '../components/footer/Footer'
 
 
 function BlogList() {
@@ -22,6 +23,7 @@ function BlogList() {
             
             <FAQ />
             <Resturent />
+            <Footer />
         </div>
     )
 }
