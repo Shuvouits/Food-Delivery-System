@@ -1,0 +1,176 @@
+.home{
+   
+    width: 80vw;
+    margin: auto;
+    
+    margin-top: 30px;
+}
+
+.home .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.home .container .section-1{
+    
+    width: 99%;
+}
+
+.home .container .section-1 .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    
+}
+
+.home .container .section-1 .row .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+    border: 1px solid #fccbd5;
+    width: 16vw;
+    height: 100px;
+    position: relative;
+}
+
+.home .container .section-1 .row .card .icon{
+    position: absolute;
+    top: 0;
+    margin-top: -20px;
+    z-index: 100;
+    
+
+}
+
+.home .container .section-1 .row .card .amount{
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.home .container .section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+   
+}
+
+.home .container .section-2 .title{
+  font-size: 21px;
+  padding-left: 20px;
+  
+
+}
+
+.home .container .section-2 .table{
+    display: flex;
+    flex-direction: column;
+    width: 79vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+    
+  }
+
+  .home .container .section-2 .table thead{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    
+    background: #f4f4f6;
+  
+  }
+
+  .home .container .section-2 .table thead th{
+
+    text-align: center;
+    
+ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+   
+  }
+
+  .home .container .section-2 .table tbody tr{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+  .home .container .section-2 .table tbody .success{
+    background: #dcf4f0;
+    border-radius: 10px;
+  } 
+
+  .home .container .section-2 .table tbody .pending{
+    background: #ffebeb;
+    border-radius: 10px;
+  }
+
+  
+
+  .home .container .section-2 .table tbody td{
+   
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .home .container .section-1 .row{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+       
+    }
+
+    .home .container .section-1 .row .card{
+        width: 80vw;
+    }
+
+    .home .container .section-2 .table{
+        overflow-x: scroll;
+    }
+
+    .home .container .section-2 .table tbody{
+        gap: 15px;
+    }
+
+    .home .container .section-2 .table thead{
+        display: grid;
+        width: 100%;
+        width: 200vw;
+      
+        
+    }
+
+    .home .container .section-2 .table tbody tr{
+        display: grid;
+       
+        width: 200vw;
+      
+        
+    }
+
+    
+
+  }
+
+
+
