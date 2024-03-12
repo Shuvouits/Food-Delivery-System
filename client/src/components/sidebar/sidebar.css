@@ -15,6 +15,16 @@
    font-size: 35px;
    font-weight: bold;
    color: #f01543;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+ 
+}
+
+.sidebar .container .brand .icon{
+    color: black;
+    cursor: pointer;
+    margin-left: 50px;
 }
 
 .sidebar .container .menu{

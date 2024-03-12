@@ -84,10 +84,12 @@
   
 
   position: absolute;
-  top: 90px;
-  width: 200px;
+  top: 70px;
+  right: -20px;
+  width: 300px;
   z-index: 9999;
   background: white;
+  border: 1px solid gainsboro;
 
 } 
 

@@ -1,4 +1,5 @@
 .layout{
+    position: relative;
     
 } 
 
@@ -22,6 +23,8 @@
 }
 
 
+
+
 @media only screen and (max-width: 1410px) {
 
     .layout .container .left-part{
@@ -40,6 +43,19 @@
 
     .layout .container .left-part{
         display: none;
+    }
+
+    .layout .container .responsive{
+
+        position: absolute;
+        top: 0px;
+        z-index: 9999;
+        background: white;
+        
+        width: 65vw;
+        display: block;
+        
+
     }
 
     .layout .container .right-part{
