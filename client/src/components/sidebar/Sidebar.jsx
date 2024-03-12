@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './sidebar.css'
+import { Link } from 'react-router-dom'
 
 function Sidebar({handleClick}) {
     const [order, setOrder] = useState(false)
@@ -65,7 +66,7 @@ function Sidebar({handleClick}) {
                         {order && (
 
                             <div className='submenu-area'>
-                                <span className='list'>All Order</span>
+                                <span className='list'><Link to={'/admin/all-order'} className='' style={{color: 'black', textDecoration:'none'}}> All Order </Link></span>
                                 <span className='list'>Delivery Order</span>
                                 <span className='list'>PickUp Order</span>
                                 <span className='list'>InRestaurent Order</span>

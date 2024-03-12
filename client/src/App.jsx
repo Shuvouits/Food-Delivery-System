@@ -8,6 +8,7 @@ import Blog from './pages/Blog'
 import BlogList from './pages/BlogList'
 import ContactUs from './pages/ContactUs'
 import Dashboard from './pages/admin/Dashboard'
+import OrderAll from './pages/admin/OrderAll'
 function App() {
 
   const isHomeRoute = window.location.pathname === '/';
@@ -26,6 +27,7 @@ function App() {
         <Route path='/blog-list' element={<BlogList />} />
         <Route path='/contact' element={<ContactUs />} />
         <Route path='/admin/dashboard' element={<Dashboard />} />
+        <Route path='/admin/all-order' element={<OrderAll />} />
       </Routes>
   
 
